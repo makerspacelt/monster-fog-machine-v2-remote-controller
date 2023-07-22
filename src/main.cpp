@@ -54,11 +54,11 @@ void setup() {
     oled.clear();
     oled.setFont(FONT8X16);
     oled.setCursor(0, 0);
-    oled.invertOutput(true);
     oled.print(DURATION_STR);
     oled.setCursor(0, 2);
-    oled.invertOutput(false);
+    oled.invertOutput(true);
     oled.print(INTERVAL_STR);
+    oled.invertOutput(false);
     // oled.print(oled.getCursorX());
     oled.on();
 
